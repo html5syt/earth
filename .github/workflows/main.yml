@@ -22,7 +22,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Setup Android SDK
-      uses: android-actions/setup-android@v2
+      uses: android-actions/setup-android@v1
       with:
         # 使用项目需要的 Android SDK 版本
         build-tools-version: "26.0.0"  # 替换为你的构建工具版
