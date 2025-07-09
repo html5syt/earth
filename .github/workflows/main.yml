@@ -18,16 +18,15 @@ jobs:
     - name: Set up JDK 11
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: '11'
         distribution: 'temurin'
 
     - name: Setup Android SDK
       uses: android-actions/setup-android@v2
       with:
         # 使用项目需要的 Android SDK 版本
-        build-tools-version: "30.0.3"  # 替换为你的构建工具版本
-        ndk-version: "21.4.7075529"    # 可选，如有需要
-        platform-version: "android-30" # 替换为你的目标平台
+        build-tools-version: "30.0.3"  # 替换为你的构建工具版
+        platform-version: "android-29" # 替换为你的目标平台
 
     - name: Make Gradle Wrapper executable
       run: chmod +x ./gradlew
