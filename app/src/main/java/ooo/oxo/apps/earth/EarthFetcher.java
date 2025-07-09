@@ -71,11 +71,11 @@ public class EarthFetcher {
     }
 
     private String getUrl(String path, int resolution) {
-        if (BuildConfig.USE_OXO_SERVER) {
-            return String.format(Locale.US, BuildConfig.SERVER_OXO, path, resolution);
-        } else {
+//        if (BuildConfig.USE_OXO_SERVER) {
+//            return String.format(Locale.US, BuildConfig.SERVER_OXO, path, resolution);
+//        } else {
             return String.format(Locale.US, BuildConfig.SERVER_NICT, path);
-        }
+//        }
     }
 
     public void clean() {
