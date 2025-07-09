@@ -25,7 +25,7 @@ jobs:
       uses: android-actions/setup-android@v2
       with:
         # 使用项目需要的 Android SDK 版本
-        build-tools-version: "30.0.3"  # 替换为你的构建工具版
+        build-tools-version: "29.0.2"  # 替换为你的构建工具版
         platform-version: "android-29" # 替换为你的目标平台
 
     - name: Make Gradle Wrapper executable
